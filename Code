@@ -1,0 +1,17 @@
+#pip install speedtest-cli
+import speedtest 
+
+def get_new_speeds():
+
+    speed_test st.Speedtest( ) 
+    speed_test.get_best_server()
+
+    ping = speed_test.results.ping 
+    download  = speed test.download( ) 
+    upload = speed_test.upload()
+
+    #converting to MB per second
+
+    download_mbs = round(download / (10**6), 2) 
+    upload mbps = round(upload / (10**6), 2)
+    return (ping, download_mbs, upload_mbs)
